@@ -1,0 +1,28 @@
+int num = 1
+while (num < 1000) do {
+    int temp = (2*num)
+    num = (temp+1)
+}
+output num
+
+
+int reps = 2
+while (reps > 0) do {
+    str temp = "inside"
+    output {"temp", "=", temp}
+    reps = (reps-1)
+}
+
+str temp = "outside"
+output {"temp", "=", temp}
+
+str a = "global"
+reps = 4
+while (reps > 0) do {
+    output a
+    str b = "local"
+    output b
+    reps = (reps-1)
+}
+
+output a
